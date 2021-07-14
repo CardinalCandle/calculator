@@ -1,0 +1,84 @@
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: rgba(250, 128, 114, 0.726);
+    font-size: 8vw;
+}
+#cont {
+    padding: 10%;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+
+}
+#container {
+    display: grid;
+    flex-direction: row;
+    background:rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+#display {
+    padding: 3% 0;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;    
+
+}
+#buttons {
+    display: grid;
+    width: 100%;
+    grid-auto-rows: auto;
+    grid-template-areas: "a b c d e" 
+                         "f g h i j" 
+                         "k l m n o" 
+                         "p q r s o" ;
+    
+
+    
+}
+button {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 100%;
+    height: 65px;
+    justify-self: center;
+    background: unset;
+    color: lightgray;
+    border-width: 0.0025vw;
+    border-color: rgba(255, 255, 255, 0.128);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input {
+    background: unset;
+    color: lightgray;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2%;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.512);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+button:hover{
+    border-color: rgba(0, 197, 197, 0.541);
+    background: darkslategray;
+    transform: scale(1.2);
+}
+html {
+   
+    background: url(" https://w.wallhaven.cc/full/4l/wallhaven-4lm2qp.png") no-repeat center center fixed;
+
+    /*/backgro: url("/images/wallhaven-j5lmvm.jpg") no-repeat center center fixed;
+    /*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#eq {
+    height: 200%;
+}
