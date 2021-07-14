@@ -79,6 +79,12 @@ function operate() {
    }
 }
 
+///
+/// TODO : Users should be able to string together 
+/// several operations and get the right answer.
+/// TODO : Add keyboard support
+///
+
 function delFluff() {
     keep = true
     while (document.getElementById("box").value.includes(".") &&

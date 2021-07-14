@@ -6,9 +6,9 @@ h1 {
     
 }
 #cont {
-    padding: 10%;
+    padding: 5%;
     margin: 0 auto;
-    width: 50%;
+    width: 45%;
     height: 50%;
 
 }
@@ -85,4 +85,9 @@ html {
 }
 .zer {
     height: 200%;
+    color: rgba(250, 128, 114, 0.726);
+}
+
+.six {
+    color: rgba(250, 128, 114, 0.726);
 }
