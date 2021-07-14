@@ -2,7 +2,7 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: rgba(250, 128, 114, 0.726);
-    font-size: 8vw;
+    font-size: 5vw;
 }
 #cont {
     padding: 10%;
@@ -14,7 +14,7 @@ h1 {
 #container {
     display: grid;
     flex-direction: row;
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.4);
     margin: 0 auto;
     border-radius: 4px;
 
@@ -35,7 +35,6 @@ h1 {
                          "k l m n o" 
                          "p q r s o" ;
     
-
     
 }
 button {
@@ -70,7 +69,7 @@ button:hover{
 }
 html {
    
-    background: url(" https://w.wallhaven.cc/full/4l/wallhaven-4lm2qp.png") no-repeat center center fixed;
+    background: url("/images/wallhaven-4lm2qp.png") no-repeat center center fixed;
 
     /*/backgro: url("/images/wallhaven-j5lmvm.jpg") no-repeat center center fixed;
     /*/
@@ -81,4 +80,9 @@ html {
 }
 #eq {
     height: 200%;
+}
+#neg:hover {
+    transform: unset;
+    background: unset;
+    border-color: transparent;
 }
