@@ -81,13 +81,16 @@ html {
     background-size: cover;
 }
 #eq {
-    height: 200%;
+    height: 208%;
 }
 .zer {
-    height: 200%;
+    height: 208%;
     color: rgba(250, 128, 114, 0.726);
 }
 
 .six {
     color: rgba(250, 128, 114, 0.726);
+}
+#but {
+    padding: 4%;
 }

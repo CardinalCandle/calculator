@@ -17,7 +17,6 @@ function divide(a,b) {
         return ""
     }
     else {
-        console.log("dividing " + a + " by " + b)
         return a/b
     }
 }
@@ -82,8 +81,6 @@ function operate() {
 ///
 /// TODO : Users should be able to string together 
 /// several operations and get the right answer.
-/// TODO : Add keyboard support
-///
 
 function delFluff() {
     keep = true
@@ -115,6 +112,11 @@ function myFunction(id) {
 function addComma(id) {
     if (fnumber == "") {
         document.getElementById("box").value = ""
+        snumber += "0"
+        document.getElementById("box").value += "0";
+        snumber += document.getElementById(`${id}`).innerText
+        document.getElementById("box").value += document.getElementById(`${id}`).innerText;
+        return;
     }
     if (document.getElementById("box").value.includes(".")) {return}
     else {
@@ -128,7 +130,7 @@ function addComma(id) {
             fnumber += document.getElementById(`${id}`).innerText
             document.getElementById("box").value += document.getElementById(`${id}`).innerText;
             return;
-            }
+        }
     }
 }
 
@@ -162,7 +164,35 @@ function addOperator(id) {
         return
     }
  }
-///EventListeners
+ document.addEventListener('keydown', function (event) {
+     nums = "1234567890"
+     op = "+-*/"
+     ops = {
+         "+" : "pls",
+         "-" : "min",
+         "*" : "by",
+         "/" : "dv",
+         }
+    if (nums.includes(event.key)) {
+        return myFunction(event.key)
+    }
+    else if (op.includes(event.key)) {
+        return addOperator(ops[event.key])
+    }    
+    else if (event.key === '.') {
+        return addComma("com")
+    }
+    if (event.key === 'Backspace') {
+        return delLast()
+    }    
+    if (event.key === 'Enter') {
+        return operate()
+    }
+    else {
+        return
+    }
+  });
+ ///EventListeners
 document.getElementById("dv").addEventListener("click", function(){addOperator("dv")});
 document.getElementById("by").addEventListener("click", function(){addOperator("by")});
 document.getElementById("min").addEventListener("click", function(){addOperator("min")});
@@ -181,3 +211,4 @@ document.getElementById("0").addEventListener("click", function(){myFunction("0"
 document.getElementById("clr").addEventListener("click", function(){clearCalc()});
 document.getElementById("eq").addEventListener("click", function(){operate()});
 document.getElementById("del").addEventListener("click", function(){delLast()});
+
