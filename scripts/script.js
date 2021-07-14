@@ -107,6 +107,9 @@ function myFunction(id) {
     }
 }
 function addComma(id) {
+    if (fnumber == "") {
+        document.getElementById("box").value = ""
+    }
     if (document.getElementById("box").value.includes(".")) {return}
     else {
         if (operator != "") {
