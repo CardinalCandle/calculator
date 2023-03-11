@@ -1,16 +1,14 @@
 h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Comfortaa, sans-serif;
     text-align: center;
     color: rgba(250, 128, 114, 0.726);
-    font-size: 5vw;
-    
+    font-size: 30px;
 }
 #cont {
-    padding: 5%;
+    padding: 20px;
     margin: 0 auto;
-    width: 45%;
-    height: 50%;
-
+    width: 40%;
+    height: auto;
 }
 #container {
     display: grid;
@@ -22,11 +20,11 @@ h1 {
 
 }
 #display {
-    padding: 3% 0;
-    width: 95%;
-    margin: 0 auto;
-    text-align: center;    
-
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    width: 90% ;
+    box-align: center;    
 }
 #buttons {
     display: grid;
@@ -36,10 +34,9 @@ h1 {
                          "f g h i j" 
                          "k l m n o" 
                          "p q r s o" ;
-    
-    
 }
 button {
+    font-family: Comfortaa, sans-serif;
     margin: 0 auto;
     font-size: 20px;
     width: 100%;
@@ -53,16 +50,16 @@ button {
 }
 input {
     background: unset;
-    color: lightgray;
+    color: darkgray;
     display: block;
     margin: 0 auto;
     width: 100%;
-    padding: 2%;
+    padding: 12px 0;
     border-width: 1px;
     border-radius: 5px;
-    border-color: rgba(255, 255, 255, 0.512);
+    border-color: rgba(255, 255, 255, 0.256);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
 }
 button:hover{
     border-color: rgba(0, 197, 197, 0.541);
@@ -70,7 +67,6 @@ button:hover{
     transform: scale(1.2);
 }
 html {
-   
     background: url("https://w.wallhaven.cc/full/4l/wallhaven-4lm2qp.png") no-repeat center center fixed;
 
     /*/backgro: url("/images/wallhaven-j5lmvm.jpg") no-repeat center center fixed;
@@ -79,12 +75,13 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: Comfortaa, sans-serif;
 }
 #eq {
-    height: 216%;
+    height: 210.5%;
 }
 .zer {
-    height: 216%;
+    height: 208%;
     color: rgba(250, 128, 114, 0.726);
 }
 
@@ -92,6 +89,7 @@ html {
     color: rgba(250, 128, 114, 0.726);
 }
 #but {
-    padding: 4%;
+    font-family: Comfortaa, sans-serif;
+    padding: 2px;
 }
 
